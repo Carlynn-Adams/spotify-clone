@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your favourite music is here</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+  </head>
+  <body>
+   <!-- This code block defines the navigation bar of the webpage -->
+    <nav>
+      <div class="brand">
+        <img src="logo.png" alt="Spotify Logo">
+        <a href="#">Spotify</a>
+      </div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../help.html">About</a></li>
+      </ul>
+    </nav>
+      <!-- This code block defines the main content area of the webpage -->
+    <div class="container">
+      <div class="songList">
+        <!-- This line defines the title of the song list -->
+        <h1>Your Top Songs</h1>
+        <!-- This code block defines the list of songs and their details -->
+         <div class="songItemContainer">
+      <div class="songItem">
+        <img src="covers/1.jpg" alt="Cover">
+        <span class="songName">Jungle - Back On 74</span>
+        <span class="timestamp">
+          03:29
+          <i id="0" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/2.jpg" alt="Cover">
+        <span class="songName">Bruno Mars - Leave The Door Open</span>
+        <span class="timestamp">
+          04:01
+          <i id="1" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/3.jpg" alt="Cover">
+        <span class="songName">Peggy Gou - (It Goes Like) Nanana</span>
+        <span class="timestamp">
+          06:07
+          <i id="2" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/4.jpg" alt="Cover">
+        <span class="songName">Dua Lipa - Levitating</span>
+        <span class="timestamp">
+          03:24
+          <i id="3" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/5.jpg" alt="Cover">
+        <span class="songName">Tame Impala - Breathe Deeper</span>
+        <span class="timestamp">
+          06:12
+          <i id="4" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/6.jpg" alt="Cover">
+        <span class="songName">Khruangbin, Leon Bridges - Texas Sun</span>
+        <span class="timestamp">
+          04:12
+          <i id="5" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/7.jpg" alt="Cover">
+        <span class="songName">ANOTR - Relax My Eyes</span>
+        <span class="timestamp">
+          03:12
+          <i id="6" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/8.jpg" alt="Cover">
+        <span class="songName">Fred again... - adore u</span>
+        <span class="timestamp">
+          03:40
+          <i id="7" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/9.jpg" alt="Cover">
+        <span class="songName">Jorja Smith - Little Things</span>
+        <span class="timestamp">
+          03:24
+          <i id="8" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+      <div class="songItem">
+        <img src="covers/10.jpg" alt="Cover">
+        <span class="songName">KAYTRANADA - Intimidated</span>
+        <span class="timestamp">
+          03:27
+          <i id="9" class="far songItemPlay fa-play-circle"></i>
+        </span>
+      </div>
+    </div>
+   <!-- Bottom Music Player -->
+    <div class="bottom">
+        <img id="bottomCoverImage" src="covers/1.jpg" alt="Song Cover">
+        <div class="songInfo">
+            <span id="masterSongName">Jungle - Back on 74</span>
+        </div>
+        <div class="icons">
+            <i id="previous" class="fa fa-step-backward"></i>
+            <i id="masterPlay" class="fa fa-play-circle"></i>
+            <i id="next" class="fa fa-step-forward"></i>
+        </div>
+        <input id="myProgressBar" type="range" value="0" min="0" max="100">
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
